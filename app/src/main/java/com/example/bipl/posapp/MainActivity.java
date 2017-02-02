@@ -36,7 +36,11 @@ public class MainActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if(!username.getText().toString().trim().equals("") && !password.getText().toString().trim().equals("")) {
+                    new loginValidation().execute();
+                }else{
+                    username.setHint("Empty Fields not allowed");
+                }
             }
         });
     }
@@ -44,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
+            try{
+                Thread.sleep(100);
+            }catch (Exception e){
+                Thread.interrupted();
+                Toast.makeText(MainActivity.this, "Interrupted", Toast.LENGTH_SHORT).show();
+            }
             return null;
         }
 
