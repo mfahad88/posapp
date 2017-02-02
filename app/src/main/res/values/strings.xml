@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PosApp</string>
     <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="siginIn">Sign-In</string>
+    <string name="Forgot">Forgot Your Password</string>
 </resources>
