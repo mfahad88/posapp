@@ -5,4 +5,7 @@
     <string name="password">Password</string>
     <string name="siginIn">Sign-In</string>
     <string name="Forgot">Forgot Your Password</string>
+    <string name="scan">Scan</string>
+    <string name="add_Product">Add New Product</string>
+
 </resources>
