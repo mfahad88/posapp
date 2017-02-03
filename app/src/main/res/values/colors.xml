@@ -2,8 +2,9 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#73BDE5</color>
     <color name="toolbarColor">#ff0000</color>
     <color name="bluebtn">#33B5E5</color>
     <color name="greenbtn">#99CC00</color>
+    <color name="tabcolor">#73BDE5</color>
 </resources>

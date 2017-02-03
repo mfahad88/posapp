@@ -1,5 +1,6 @@
 package com.example.bipl.posapp;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -48,12 +49,12 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... params) {
-            try{
+            /*try{
                 Thread.sleep(100);
             }catch (Exception e){
                 Thread.interrupted();
                 Toast.makeText(MainActivity.this, "Interrupted", Toast.LENGTH_SHORT).show();
-            }
+            }*/
             return null;
         }
 
@@ -64,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
             String pass=password.getText().toString();
             if(user.equals("admin") && pass.equals("admin")){
                 Toast.makeText(MainActivity.this, "Login Success...", Toast.LENGTH_SHORT).show();
+                Intent i=new Intent(getApplicationContext(),SelectionActivity.class);
+                startActivity(i);
             }else{
                 Toast.makeText(MainActivity.this, "Login Failed..!!!", Toast.LENGTH_SHORT).show();
             }
